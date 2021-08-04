@@ -12,38 +12,63 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your application?'
+        message: 'What is the title of your application?',
+        validate: function (answer){
+            if (answer.length < 1) {
+                return console.log("Please provide a valid title for your application.")
+            }
+        }
     },
     {
         type: 'input',
         name: 'description',
-        message: 'Please add a description of your application.'
+        message: 'Please add a description of your application.',
+        validate: function (answer){
+            if (answer.length < 1) {
+                return console.log("Please provide a valid XX for your application.")
+            }
     },
     {
         type: 'input',
         name: 'installationInstructions',
-        message: 'Please provide the installation instructions for the application.'
+        message: 'Please provide the installation instructions for the application.',
+        validate: function (answer){
+            if (answer.length < 1) {
+                return console.log("Please provide a valid XX for your application.")
     },
     {
         type: 'input',
         name: 'usageInformation',
-        message: 'Please provide the usage information of your application.'
+        message: 'Please provide the usage information of your application.',
+        validate: function (answer){
+            if (answer.length < 1) {
+                return console.log("Please provide a valid XX for your application.")
     },
     {
         type: 'input',
         name: 'contributionGuidelines',
-        message: 'Please describe your application.'
+        message: 'Please describe your application.',
+        validate: function (answer){
+            if (answer.length < 1) {
+                return console.log("Please provide a valid XX for your application.")
+            }
     },
     {
         type: 'input',
         name: 'testInstructions',
-        message: 'Please describe your application.'
+        message: 'Please describe your application.',
+        validate: function (answer){
+            if (answer.length < 1) {
+                return console.log("Please provide a valid XX for your application.")
     },
     {
         type: 'input',
         name: 'license',
         message: 'Please describe your application.',
-        choices: ['Apache-2.0-only', 'MIT', 'ISC', 'BSD']
+        choices: ['Apache-2.0-only', 'MIT', 'ISC', 'BSD'],
+        validate: function (answer){
+            if (answer.length < 1) {
+                return console.log("")
     },
 ];
 
