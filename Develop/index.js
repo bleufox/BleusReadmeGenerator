@@ -2,7 +2,10 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown')
+const util = require('util');
+
+const api = require('./utils/api.js')
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -18,12 +21,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'installation',
-        message: 'Please describe your application.'
-    },
-    {
-        type: 'input',
-        name: 'instructions',
+        name: 'installationInstructions',
         message: 'Please describe your application.'
     },
     {
@@ -41,6 +39,11 @@ const questions = [
         name: 'testInstructions',
         message: 'Please describe your application.'
     }
+    {
+        type: 'input',
+        name: 'license',
+        message: 'Please describe your application.'
+    },
 ];
 
 // TODO: Create a function to write README file
