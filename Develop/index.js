@@ -1,74 +1,57 @@
 // TODO: Include packages needed for this application
 
-const fs = require('fs');
 const inquirer = require('inquirer');
-const util = require('util');
-
-const api = require('./utils/api.js')
+const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
+const { type } = require('os');
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your application?',
-        validate: function (answer){
-            if (answer.length < 1) {
-                return console.log("Please provide a valid title for your application.")
-            }
-        }
+        message: 'What is the title of your application?'
     },
     {
         type: 'input',
         name: 'description',
-        message: 'Please add a description of your application.',
-        validate: function (answer){
-            if (answer.length < 1) {
-                return console.log("Please provide a valid XX for your application.")
-            }
+        message: 'Please add a description of your application.'
     },
     {
         type: 'input',
-        name: 'installationInstructions',
-        message: 'Please provide the installation instructions for the application.',
-        validate: function (answer){
-            if (answer.length < 1) {
-                return console.log("Please provide a valid XX for your application.")
+        name: 'installation',
+        message: 'Please provide the installation instructions for the application.'
     },
     {
         type: 'input',
         name: 'usageInformation',
-        message: 'Please provide the usage information of your application.',
-        validate: function (answer){
-            if (answer.length < 1) {
-                return console.log("Please provide a valid XX for your application.")
+        message: 'Please provide the usage information of your application.'
     },
     {
         type: 'input',
         name: 'contributionGuidelines',
-        message: 'Please describe your application.',
-        validate: function (answer){
-            if (answer.length < 1) {
-                return console.log("Please provide a valid XX for your application.")
-            }
+        message: 'Please provide contribution guidelines for your application.'
     },
     {
         type: 'input',
         name: 'testInstructions',
-        message: 'Please describe your application.',
-        validate: function (answer){
-            if (answer.length < 1) {
-                return console.log("Please provide a valid XX for your application.")
+        message: 'Please provide test instructions for your application.'
     },
     {
         type: 'input',
         name: 'license',
-        message: 'Please describe your application.',
-        choices: ['Apache-2.0-only', 'MIT', 'ISC', 'BSD'],
-        validate: function (answer){
-            if (answer.length < 1) {
-                return console.log("")
+        message: 'Please select the applicable license for your application.',
+        choices: ['Apache-2.0-only', 'MIT', 'ISC', 'BSD']
+    },
+    {
+        type: 'input',
+        name: 'githubUsername',
+        message: 'Please provide your GitHub username.',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please provide your email address.',
     },
 ];
 
