@@ -1,16 +1,18 @@
+
   # Bleu's ReadMe Generator
 
+  ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  This is a description of the application.
+  This is a description.
 
   ## Table of Contents
   - [Installation](#installation)
-  - [Usage](#usageInformation)
+  - [Usage](#usage)
   - [License](#license)
-  - [Contributing](#contributionGuidelines)
-  - [Tests](#testInstructions)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
   - [Questions](#questions)
 
   ## Installation
@@ -26,19 +28,19 @@
 
   ## Usage
   * Example of how to use the program:
-  This is usage information.
+  undefined
 
   ## Contributing
   * Guidelines for contributing to the project:
-  Anyone may contribute.
+  undefined
 
   ## Tests
   * Instructions regarding testing the program:
   ```
-  npm test
+  undefined
   ```
 
   ## Questions
   GitHub: https://github.com/bleufox
-  Email: thebleufox8@gmail.com
+  Email: thebleuxfox8@gmail.com
   

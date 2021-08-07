@@ -24,17 +24,17 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'usageInformation',
+        name: 'usage',
         message: 'Please provide the usage information of your application.'
     },
     {
         type: 'input',
-        name: 'contribution',
+        name: 'contributing',
         message: 'Please provide contribution guidelines for your application.'
     },
     {
         type: 'input',
-        name: 'testInstructions',
+        name: 'tests',
         message: 'Please provide test instructions for your application.'
     },
     {
@@ -65,7 +65,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((userInput) => {
-        writeToFile('New1.md', generateMarkdown({ ...userInput }))
+        writeToFile('New2.md', generateMarkdown({ ...userInput }))
     })
 }
 
