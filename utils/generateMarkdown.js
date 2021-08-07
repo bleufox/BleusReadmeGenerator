@@ -5,7 +5,8 @@ function renderLicenseBadge(license) {
     return `[![License: MIT](https://img.shields.io/badge/License-${license}-yellow.svg)](https://opensource.org/licenses/MIT)`;
   } else {
     return ""
-  }}
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -20,26 +21,49 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
+  ## License
+  ${renderLicenseBadge(data.license)}
+
   ## Description
   ${data.description}
 
   ## Table of Contents
-  - [Installation] (#installation)
-  - [Usage] (#usageInformation)
-  - [License] (#license)
+  - [Installation](#installation)
+  - [Usage](#usageInformation)
+  - [License](#license)
   - [Contributing](#contributionGuidelines)
   - [Tests](#testInstructions)
   - [Questions](#questions)
 
-  ##
+  ## Installation
+  * The following steps are required to run the program:
+
+  \`\`\`
   ${data.installation}
-  \`\`\
+  \`\`\`
+
+  ## Instructions
+  * Instructions for use are as follows:
   ${data.instructions}
+
+  ## Usage
+  * Example of how to use the program:
   ${data.usageInformation}
+
+  ## Contributing
+  * Guidelines for contributing to the project:
   ${data.contributionGuidelines}
-  ${data.description}
-  ${data.description}
-`;
+
+  ## Tests
+  * Instructions regarding testing the program:
+  \`\`\`
+  ${data.testInstructions}
+  \`\`\`
+
+  ## Questions
+  GitHub: https://github.com/${data.githubUsername}
+  Email: ${data.email}
+  `;
 }
 
 module.exports = generateMarkdown;

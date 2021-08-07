@@ -29,7 +29,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contributionGuidelines',
+        name: 'contribution',
         message: 'Please provide contribution guidelines for your application.'
     },
     {
@@ -65,7 +65,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((userInput) => {
-        writeToFile('README2.md', generateMarkdown({ ...userInput }))
+        writeToFile('New1.md', generateMarkdown({ ...userInput }))
     })
 }
 
