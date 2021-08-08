@@ -27,47 +27,18 @@ THEN I am taken to the corresponding section of the README
 * Javascript
 
 ## Screenshot
-
 ![Screenshot](images/screenshot.png)
 
-### Deliverables: 20%
+## Walkthrough Video Link
+[Bleu's ReadMe Generator Walkthrough Video](https://www.loom.com/share/3c5abe60a3064b2f84f3145bce6f0b40)
 
-* A sample README generated using the application must be submitted.
+## License Information
+* MIT
 
-* Your GitHub repository containing your application code.
+## Repository
+* GitHub Repo: https://github.com/bleufox/BleusReadmeGenerator
 
-### Walkthrough Video Link
-
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-	* Uses the [Inquirer package](https://www.npmjs.com/package/inquirer).
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains a high-quality README with description and a link to walkthrough video.
-
-
-## Review
-
-You are required to submit the following for review:
-
-* A walkthrough video demonstrating the functionality of the application.
-
-* A sample README.md file for a project repository generated using your application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## Creator
+Ashley Jones, Full Stack Developer Student
+* Email: thebleufox8@gmail.com
+* GitHub: https://github.com/bleufox

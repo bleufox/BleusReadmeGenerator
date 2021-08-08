@@ -2,7 +2,7 @@
   # Bleu's README.md Generator Application
   
   ## Description
-  This application allows users to create README.md files in the command line.
+  This application allows users to create a README.md file in the command line.
 
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -19,12 +19,12 @@
   * The following steps are required to run the program:
 
   ```
-  npm init -y, npm i 
+  npm init -y, npm i
   ```
 
   ## Instructions
   * Instructions for use are as follows:
-  Follow the installation instructions below and answer the questions that apply when prompted.
+  Follow the installaions instructions below and answer the applicable questions when prompted.
 
   ## Usage
   * Example of how to use the program:
@@ -32,7 +32,7 @@
 
   ## Contributing
   * Guidelines for contributing to the project:
-  Anyone may contribute to the application.
+  Anyone may contribute to this application.
 
   ## Tests
   * Instructions regarding testing the program:
