@@ -48,16 +48,16 @@ function generateMarkdown(data) {
 
   ## Usage
   * Example of how to use the program:
-  ${data.usageInformation}
+  ${data.usage}
 
   ## Contributing
   * Guidelines for contributing to the project:
-  ${data.contributionGuidelines}
+  ${data.contributing}
 
   ## Tests
   * Instructions regarding testing the program:
   \`\`\`
-  ${data.testInstructions}
+  ${data.tests}
   \`\`\`
 
   ## Questions

@@ -65,7 +65,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((userInput) => {
-        writeToFile('BrandNewReadMe.md', generateMarkdown({ ...userInput }))
+        writeToFile('1.md', generateMarkdown({ ...userInput }))
     })
 }
 
