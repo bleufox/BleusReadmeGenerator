@@ -38,7 +38,7 @@ const questions = [
         message: 'Please provide test instructions for your application.'
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: 'Please select the applicable license for your application.',
         choices: ['Apache-2.0-only', 'MIT', 'ISC', 'BSD']
@@ -65,7 +65,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((userInput) => {
-        writeToFile('New2.md', generateMarkdown({ ...userInput }))
+        writeToFile('BrandNewReadMe.md', generateMarkdown({ ...userInput }))
     })
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Your Task",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,15 @@
     "fs": "0.0.1-security",
     "inquirer": "^8.1.2",
     "util": "^0.12.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bleufox/BleusReadmeGenerator.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/bleufox/BleusReadmeGenerator/issues"
+  },
+  "homepage": "https://github.com/bleufox/BleusReadmeGenerator#readme"
 }

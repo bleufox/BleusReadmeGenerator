@@ -1,11 +1,11 @@
 
-  # Bleu's ReadMe Generator
+  # Bleu's ReadMe Generator Application
+  
+  ## Description
+  This application creates README.md files in the command line.
 
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-  ## Description
-  This is a description.
 
   ## Table of Contents
   - [Installation](#installation)
@@ -19,7 +19,7 @@
   * The following steps are required to run the program:
 
   ```
-  npm i
+  npm init -y, npm i
   ```
 
   ## Instructions
@@ -42,5 +42,5 @@
 
   ## Questions
   GitHub: https://github.com/bleufox
-  Email: thebleuxfox8@gmail.com
+  Email: thebleufox8@gmail.com
   
