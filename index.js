@@ -19,6 +19,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'instructions',
+        message: 'Please provide instructions for your application.'
+    },
+    {
+        type: 'input',
         name: 'installation',
         message: 'Please provide the installation instructions for the application.'
     },
@@ -65,7 +70,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((userInput) => {
-        writeToFile('1.md', generateMarkdown({ ...userInput }))
+        writeToFile('BrandNew.md', generateMarkdown({ ...userInput }))
     })
 }
 
